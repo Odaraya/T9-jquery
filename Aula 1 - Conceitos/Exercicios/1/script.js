@@ -22,4 +22,25 @@ const frases = [
     "Não importa o tamanho da montanha, ela não pode tapar o sol.",
     "O bom-senso vai mais longe do que muito conhecimento.",
 ]
+$( document ).ready(function() {});
+// const biscoito = document.querySelector('img');com click
+// const msg = document.querySelector('#message');
+// function fraseDaSorte() {
+// const fraseRandomica = Math.floor(Math.random() * frases.length)
+$('img').click(function() {
 
+  let indexDaFrase = (Math.floor(Math.random()*frases.length))
+
+  $('p').text(frases[indexDaFrase])
+
+});
+//   if (msg.innerText) {
+//     msg.innerText=""
+//     console.log("fechado");
+//     biscoito.src = "Crack-Fortune-Cookie.png";
+//   } else {
+//     msg.innerText = frases[fraseRandomica]
+//     console.log("aberto");
+//     biscoito.src = "aberto.jpg";
+//   }
+// }
